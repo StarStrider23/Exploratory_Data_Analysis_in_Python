@@ -96,7 +96,7 @@ The main alcoholc categories are Wine, Beer, cider & other drinks, Whisky and Al
 
 ![Alc_cat](https://github.com/user-attachments/assets/1299618e-1c1e-4133-acec-f7658a04e2f1)
 
-It's no suprise that Beer, cider & other drinks and Wine are the mst dominating on the market. Then comes the Spirits (or liquer) category which is followed by the Alcoholfree, which looks like 0 on this scale (but of course it is not). The Beer, cider & other drinks and Wine products outsell the Whisky products by as much as 7-10 times. One can also see (allegedly) the COVID-19 effect. It is clearly visible on the Beer, cider & other drinks line, a tad less on the wine line and practically invisble on the Whisky line, but this is due to the scale of the picture. Plotting only the Spirits and the Alcoholfree drinks shows that the last category actually experienced decrease in sales during the pandemic, which is interesting. 
+It's no suprise that Beer, cider & other drinks and Wine are the mst dominating on the market. Then comes the Spirits (or liquer) category which is followed by the Alcoholfree, which looks like 0 on this scale (but of course it is not). The Beer, cider & other drinks and Wine products outsell the Whisky products by as much as 7-10 times. One can also see (allegedly) the COVID-19 effect. It is clearly visible on the Beer, cider & other drinks line, a tad less on the wine line and practically invisble on the Whisky line, but this is due to the scale of the picture. Plotting only the Spirits and the Alcoholfree drinks shows that the last category actually experienced decrease in sales during the 1st year of the pandemic, which is interesting. 
 
 ![Spirits+AlcFree](https://github.com/user-attachments/assets/70a4ec1c-d716-4316-b2e0-493816b39f69)
 
@@ -116,10 +116,24 @@ Now, let's inspect light lager beer. After all, this is probably the most sold p
 
 It costed around 16 SEK in 2009 and now the average price is around 22 SEK which is a 27% increase. Once again, we can see that during the last few years, the curve became more steep. The increase was 6.3% during the years 2022 and 2023 and just 2.5% the last year. 
 
-Now, what is await
+Now, what will be the average price in the future?
 
 
 ![Avg_lag_pred](https://github.com/user-attachments/assets/fb3cf92d-c8f6-4813-86c6-9eba9950b3b6)
+
+The same model (ARIMA) predicts the following average prices for the next 5 years: 22.18 SEK, 22.48 SEK, 23.11 SEK, 23.39 SEK and 23.76 SEK which. Procentually, the  growths are roughly between 1.1% and 2.7% which isn't anything outrageous. 
+
+### 6.
+
+Now, let's investigate the 2nd biggest alcohol group - wines. Below is a graph that shows top 7 countries whose wine customers prefered to buy the most. The market is dominated by the Italian wines which then is followed by the French and Spanish wines, which almost go neck to neck. But what is interesting to see on this graph is the decline of the sales of the South African and Australian wines. During the years 2009-2011, the two were #1 and #3, but ever since they steadily declined whereas the other sales either stayed unchanged or grew. Now, of course this doesn't necessarily imply that Systembolaget should waive these particular wines. After all, they are still the fourth and fifth biggest groups, but perhaps one could start thinking about decreasing the selection of the South African and Australian wines. To make decisions on what to constrain, one could look at how each wine from South Africa and Australia performs. 
+
+However, this is only one alternative of what this decline might indicate. The other possibility is that Systembolaget itself started buying less of the South African and Australian wines and there's just much less to buy. Although, this would mean that Systembolaget now buys ca 2 times less of these wines than 16 years ago. In order to find out if this is true one would need to investigate delivery data which is unfortunately unavailable. 
+
+Finally, here are top 20 countries in the same category.
+
+![wine1](https://github.com/user-attachments/assets/f90a799c-b332-4748-8d52-0e8d21f50929)
+
+### 7. 
 
 
 
