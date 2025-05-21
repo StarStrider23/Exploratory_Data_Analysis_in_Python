@@ -52,7 +52,7 @@ Overall there are 16 files, each with 17 columns and around 15k to 47k rows (dep
 
 The goal of the project is to analyse Systembolagets sales by studying and answering the following questions:
 
-1. What was the revenue of Systembolaget during the years 2009-2024? How did it change procentually?
+1. What was the revenue of Systembolaget during the years 2009-2024? How did it change perceptually?
 
 2. What will be the company's revenue in the next 5 years?
 
@@ -121,7 +121,7 @@ Now, what will be the average price in the future?
 
 ![Avg_lag_pred](https://github.com/user-attachments/assets/fb3cf92d-c8f6-4813-86c6-9eba9950b3b6)
 
-The same model (ARIMA) predicts the following average prices for the next 5 years: 22.18 SEK, 22.48 SEK, 23.11 SEK, 23.39 SEK and 23.76 SEK. Procentually, the  growths are roughly between 1.1% and 2.7% which isn't anything outrageous and within the past frames. 
+The same model (ARIMA) predicts the following average prices for the next 5 years: 22.18 SEK, 22.48 SEK, 23.11 SEK, 23.39 SEK and 23.76 SEK. perceptually, the  growths are roughly between 1.1% and 2.7% which isn't anything outrageous and within the past frames. 
 
 ### 6.
 
