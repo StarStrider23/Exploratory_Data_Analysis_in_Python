@@ -8,59 +8,99 @@ This is an exploratory data analysis of Systembolagets sales during the years 20
 
 The dataset used can be found in https://www.omsystembolaget.se/foretagsfakta/systembolaget-i-siffror/forsaljningsstatistik/
 
-Overall there are 16 files, each with 18 columns and around 15k to 47k rows (depending on table). 
+Overall there are 16 files, each with 17 columns and around 15k to 47k rows (depending on table). 
 
 ## Metrics 
 
-Artnr - item number, unique to each item
+- Artnr - Item number, unique to each item
 
-Varunr - 
+- Varunr - Product number, not unique to each item, but shared between the same products which differ in some way (volume, for instance)
 
-Kvittonamn
+- Kvittonamn - Receipt name
 
-Namn
+- Namn - Name of the item
 
-Producentnamn
+Producentnamn - Alcohol beverage companies
 
-Varugrupp
+Varugrupp - Alcohol category
 
-Varugrupp detalj
+Varugrupp detalj - Alcohol subcategory
 
-Rubrik
+Rubrik - Yet another subcategory
 
-Aktuellt pris
+Aktuellt pris - Price 
 
-Volym i ml
+Volym i ml - Volume of the bottle in ml
 
-Buteljtyp
+Buteljtyp - Bottle type
 
-Land
+Land - Country where the beverage was made
 
-Region
+Region - Country's region
 
-Ursprung
+Ursprung - Origin (for most of the items it is the same as Country or Region)
 
-Ekologisk
+Ekologisk - Ecological (for products that were made according to necessary ecological rules)
 
-Etiskt
+Etiskt - Ethical (Haven't found any specific information about this label)
 
-Försäljning i liter
+Försäljning i liter - Sales in liters 
 
-Artikel ID
+Artikel ID - Item's ID (yet another unique number)
+
+## Project Goals
+
+The goal of the project is to analyse Systembolagets sales by studying and answering the following questions:
+
+1. What was the revenue of Systembolaget during the years 2009-2024? How did it change procentually?
+
+2. What will be the company's revenue in the next 5 years?
+
+3. What are the main categories of the alcohol and how well does they sell?
+
+4. What is the average price of a bottle of alcohol and how has it changed throughout the years?
+
+5. What is the average price of a bottle of lager beer and how has it changed throughout the years? What will be the prices in 2025-2030?
+
+6. What are the origins of wines that are sold the most?
+
+7. What are the most bought categories of the liquer?
+
+8. What are the origins of the beers that are sold the most?
 
 
+## Results
+
+###1+2. 
+
+Below are Systembolagets revenue (in SEK) for the years 2009-2024. 
 
 
+<img width="456" alt="Снимок экрана 2025-05-21 в 14 52 55" src="https://github.com/user-attachments/assets/ccc71f2b-a0ca-46fd-9288-29d3e5d51548" />
 
+![Revenue](https://github.com/user-attachments/assets/a1c48bcb-b035-439e-8a2d-a5c1612e012b)
 
+We see that, with the exception of year 2022, the company's revenue has only grown. Observe the 13.6% procent jump from year 2019 to 2020, which looks anomalous. This is probably due to the COVID-19 pandemic that started in february 2020 in Sweden. It lasted around 2 years and most of the restrictions were lifted around the same month year 2022. While the restrictions in Sweden were milder than in any other country, there were certain restrictions that people followed. The relevant ones are number of people that were allowed to be in stores simultaneously (this concerns Systembolaget), bars closing at 20:00 and maximum number of people sitting at a table, which was 4. This, people's caution and desire to drink alcoholic beverages are what probably resulted in such a jump. There's also a chance that Systembolagets online sales grew as well. However, Systembolaget doesn't provide any such statistics. The situation normalised after year 2022, which can be observed on the graph. 
 
+In order to predict the revenue for the next 5 years, I used the darts module and the ARIMA model, AutoARIMA to be more specific since dart's ARIMA model requires at least 30 data points and there are only 16 available at the moment. The ARIMA model is one of the basic models, but it is proven to be a good one. It is suitable since the revenue the data is non stationary (i.e. exhibits an upward trend) and has no seasonality. The last reason is why I didnät use SARIMA, for instance. Anyhow, the prediction for the revenue for years 2025-2030 is below. 
 
+![Revenue prediction](https://github.com/user-attachments/assets/5a92a19d-6c27-4812-bf86-c19547c155bd)
 
+It is probably hard to read off the values, but one can extract them by using the mean() function. The future revenues are 50,342,852,500 SEK, 51,690,479,000 SEK, 52,976,455,100 SEK, 54,333,607,100 SEK and 56,024,699,600 SEK. Of course, making predictions aren't easy. There are just too many variabls and things that may go wrong. After all, nobody expected the outbreak of the COVID-19 virus.
 
+###3. 
 
+The main alcoholc categories are Wine, Beer, cider & other drinks, Whisky and Alcoholfree drinks. Below is a graph that shows how well each of the categories has been selling throughout the years.
 
+![Alc_cat](https://github.com/user-attachments/assets/1299618e-1c1e-4133-acec-f7658a04e2f1)
 
+It's no suprise that Beer, cider & other drinks and Wine are the mst dominating on the market. Then comes the Spirits (or liquer) category which is followed by the Alcoholfree, which looks like 0 on this scale (but of course it is not). The Beer, cider & other drinks and Wine products outsell the Whisky products by as much as 7-10 times. One can also see (allegedly) the COVID-19 effect. It is clearly visible on the Beer, cider & other drinks line, a tad less on the wine line and practically invisble on the Whisky line, but this is due to the scale of the picture. Plotting only the Spirits and the Alcoholfree drinks shows that the last category actually experienced decrease in sales during the pandemic, which is interesting. 
 
+![Spirits+AlcFree](https://github.com/user-attachments/assets/70a4ec1c-d716-4316-b2e0-493816b39f69)
+
+###4.
+
+It is intersting to inspect average price of a bottle of alcohol. For this, I added a restriction - a bottle shouldn't be greater than 1000 ml. This is volume of most bottles/cans/packs that alcohol is sold in and Systembolaget also sells kegs and other products with more volume. 
 
 
 
