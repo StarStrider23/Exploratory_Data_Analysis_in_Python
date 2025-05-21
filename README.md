@@ -92,11 +92,11 @@ It is probably hard to read off the values, but one can extract them by using th
 
 ### 3. 
 
-The main alcoholc categories are Wine, Beer, cider & other drinks, Whisky and Alcoholfree drinks. Below is a graph that shows how well each of the categories has been selling throughout the years.
+The main alcoholc categories are Wine, Beer, cider & other drinks, Whisky and Alcohol free drinks. Below is a graph that shows how well each of the categories has been selling throughout the years.
 
 ![Alc_cat](https://github.com/user-attachments/assets/1299618e-1c1e-4133-acec-f7658a04e2f1)
 
-It's no suprise that Beer, cider & other drinks and Wine are the mst dominating on the market. Then comes the Spirits (or liquer) category which is followed by the Alcoholfree, which looks like 0 on this scale (but of course it is not). The Beer, cider & other drinks and Wine products outsell the Whisky products by as much as 7-10 times. One can also see (allegedly) the COVID-19 effect. It is clearly visible on the Beer, cider & other drinks line, a tad less on the wine line and practically invisble on the Whisky line, but this is due to the scale of the picture. Plotting only the Spirits and the Alcoholfree drinks shows that the last category actually experienced decrease in sales during the 1st year of the pandemic, which is interesting. 
+It's no suprise that Beer, cider & other drinks and Wine are the mst dominating on the market. Then comes the Spirits (or liquer) category which is followed by the Alcohol free, which looks like 0 on this scale (but of course it is not). The Beer, cider & other drinks and Wine products outsell the Whisky products by as much as 7-10 times. One can also see (allegedly) the COVID-19 effect. It is clearly visible on the Beer, cider & other drinks line, a tad less on the wine line and practically invisble on the Whisky line, but this is due to the scale of the picture. Plotting only the Spirits and the Alcohol free drinks shows that the last category actually experienced decrease in sales during the 1st year of the pandemic, which is interesting. 
 
 ![Spirits+AlcFree](https://github.com/user-attachments/assets/70a4ec1c-d716-4316-b2e0-493816b39f69)
 
@@ -106,7 +106,7 @@ It is intersting to inspect average price of a bottle of alcohol. For this, I ad
 
 ![Avg_alc](https://github.com/user-attachments/assets/246cd786-131a-4c88-81a9-e53e68d337b9)
 
-Anyway, it should come as no surprise that the Spirits category is the most expensive with the average price for a bottle being around 455 SEK at year 2024. It follows then by the Wine (229 SEK), Alcoholfree (31 SEK) and Beer, cider & other drinks (29 SEK). What is interesting here is the fact that a bottle of beer/cider/other is cheaper than its alcoholfree counterpart. This wasn't the case 10 years ago (22.45 SEK vs 23.3 SEK), but the Alcoholfree category saw a big price increase (from 22.45 SEK to 25.25 SEK) year 2016, which is 11% growth, while the Beer, cider & other drinks only grew 0.8% during the same period. We can also notice that the price curves became more steep the past few years. 
+Anyway, it should come as no surprise that the Spirits category is the most expensive with the average price for a bottle being around 455 SEK at year 2024. It follows then by the Wine (229 SEK), Alcohol free (31 SEK) and Beer, cider & other drinks (29 SEK). What is interesting here is the fact that a bottle of beer/cider/other is cheaper than its Alcohol free counterpart. This wasn't the case 10 years ago (22.45 SEK vs 23.3 SEK), but the Alcohol free category saw a big price increase (from 22.45 SEK to 25.25 SEK) year 2016, which is 11% growth, while the Beer, cider & other drinks only grew 0.8% during the same period. We can also notice that the price curves became more steep the past few years. 
 
 ### 5.
 
