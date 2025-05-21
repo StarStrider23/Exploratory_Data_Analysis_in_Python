@@ -20,33 +20,33 @@ Overall there are 16 files, each with 17 columns and around 15k to 47k rows (dep
 
 - Namn - Name of the item
 
-Producentnamn - Alcohol beverage companies
+- Producentnamn - Alcohol beverage companies
 
-Varugrupp - Alcohol category
+- Varugrupp - Alcohol category
 
-Varugrupp detalj - Alcohol subcategory
+- Varugrupp detalj - Alcohol subcategory
 
-Rubrik - Yet another subcategory
+- Rubrik - Yet another subcategory
+ 
+- Aktuellt pris - Price 
 
-Aktuellt pris - Price 
+- Volym i ml - Volume of the bottle in ml
 
-Volym i ml - Volume of the bottle in ml
+- Buteljtyp - Bottle type
 
-Buteljtyp - Bottle type
+- Land - Country where the beverage was made
 
-Land - Country where the beverage was made
+- Region - Country's region
 
-Region - Country's region
+- Ursprung - Origin (for most of the items it is the same as Country or Region)
 
-Ursprung - Origin (for most of the items it is the same as Country or Region)
+- Ekologisk - Ecological (for products that were made according to necessary ecological rules)
 
-Ekologisk - Ecological (for products that were made according to necessary ecological rules)
+- Etiskt - Ethical (Haven't found any specific information about this label)
 
-Etiskt - Ethical (Haven't found any specific information about this label)
+- Försäljning i liter - Sales in liters 
 
-Försäljning i liter - Sales in liters 
-
-Artikel ID - Item's ID (yet another unique number)
+- Artikel ID - Item's ID (yet another unique number)
 
 ## Project Goals
 
@@ -71,7 +71,7 @@ The goal of the project is to analyse Systembolagets sales by studying and answe
 
 ## Results
 
-###1+2. 
+### 1+2. 
 
 Below are Systembolagets revenue (in SEK) for the years 2009-2024. 
 
@@ -88,7 +88,7 @@ In order to predict the revenue for the next 5 years, I used the darts module an
 
 It is probably hard to read off the values, but one can extract them by using the mean() function. The future revenues are 50,342,852,500 SEK, 51,690,479,000 SEK, 52,976,455,100 SEK, 54,333,607,100 SEK and 56,024,699,600 SEK. Of course, making predictions aren't easy. There are just too many variabls and things that may go wrong. After all, nobody expected the outbreak of the COVID-19 virus.
 
-###3. 
+### 3. 
 
 The main alcoholc categories are Wine, Beer, cider & other drinks, Whisky and Alcoholfree drinks. Below is a graph that shows how well each of the categories has been selling throughout the years.
 
@@ -98,7 +98,7 @@ It's no suprise that Beer, cider & other drinks and Wine are the mst dominating 
 
 ![Spirits+AlcFree](https://github.com/user-attachments/assets/70a4ec1c-d716-4316-b2e0-493816b39f69)
 
-###4.
+### 4.
 
 It is intersting to inspect average price of a bottle of alcohol. For this, I added a restriction - a bottle shouldn't be greater than 1000 ml. This is volume of most bottles/cans/packs that alcohol is sold in and Systembolaget also sells kegs and other products with more volume. 
 
