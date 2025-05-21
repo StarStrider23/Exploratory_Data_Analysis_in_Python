@@ -94,11 +94,11 @@ It is probably hard to read off the values, but one can extract them by using th
 
 The main alcoholc categories are Wine, Beer, cider & other drinks, Whisky and Alcohol free drinks. Below is a graph that shows how well each of the categories has been selling throughout the years.
 
-![Alc_cat](https://github.com/user-attachments/assets/1299618e-1c1e-4133-acec-f7658a04e2f1)
+![spirits](https://github.com/user-attachments/assets/204273f5-a15d-42f4-8d97-598dcd0181e7)
 
 It's no suprise that Beer, cider & other drinks and Wine are the most dominating on the market. Then comes the Spirits (or liquer) category which is followed by the Alcohol free, which looks like the 0-line on this scale (but of course it is not). The Beer, cider & other drinks and Wine products outsell the Whisky products by as much as 7-10 times. One can also see (allegedly) the COVID-19 effect. It is clearly visible on the Beer, cider & other drinks line, a tad less on the wine line and practically invisble on the Whisky line, but this is due to the scale of the picture. Plotting only the Spirits and the Alcohol free drinks shows that the last category actually experienced decrease in sales during the 1st year of the pandemic, which is interesting. 
 
-![Spirits+AlcFree](https://github.com/user-attachments/assets/70a4ec1c-d716-4316-b2e0-493816b39f69)
+![Spirits+AlcFree](https://github.com/user-attachments/assets/44510a1c-18dc-4ee9-8be8-dedfa9ebc9f1)
 
 ### 4.
 
