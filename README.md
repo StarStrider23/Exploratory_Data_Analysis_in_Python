@@ -127,7 +127,7 @@ The same model (ARIMA) predicts the following average prices for the next 5 year
 
 Now, let's investigate the 2nd biggest alcohol group - wines. Below is a graph that shows top 7 countries whose wine customers prefered to buy the most. 
 
-![wine](https://github.com/user-attachments/assets/d0d7dc1f-2438-4793-85d2-9f5b62518120)
+![wine](https://github.com/user-attachments/assets/6f46b9ef-e6b4-4a5e-8ea3-b5f97f9716da)
 
 The market is dominated by the Italian wines which then is followed by the French and Spanish wines, which almost go neck and neck. But what is interesting to see on this graph is the decline of the sales of the South African and Australian wines. During the years 2009-2011, the two were #1 and #3, but ever since they steadily declined whereas the other sales either stayed unchanged or grew. Now, of course this doesn't necessarily imply that Systembolaget should waive these particular wines. After all, they are still the fourth and fifth biggest groups, but perhaps one could start thinking about decreasing the selection of the South African and Australian wines. To make decisions on what to constrain, one could look at how each wine from South Africa and Australia performs. 
 
@@ -135,7 +135,7 @@ However, this is only one alternative of what this decline might indicate. The o
 
 Finally, here are top 20 countries in the same category.
 
-![wine1](https://github.com/user-attachments/assets/f90a799c-b332-4748-8d52-0e8d21f50929)
+![wine1](https://github.com/user-attachments/assets/0f654445-c753-4ce9-bed3-ac8cf4219f20)
 
 ### 7. 
 
@@ -149,10 +149,11 @@ The categories Drinks & Cocktails (which is mostly comprised of other liquers th
 
 Finally, let's investigate the beer subcategory. It is strongly dominated by the Swedish beers (what a surprise, huh?) to the extent that one can't really see the other countries except for the "International marks" which represent beers brewed in multiple countries. 
 
-![beers](https://github.com/user-attachments/assets/101f228a-f99f-4610-9287-18c53fef2e73)
+![beer1](https://github.com/user-attachments/assets/ebf47ba4-3d4c-4e93-9065-c305dc0fe1dd)
+
 
 Excluding these two, this is the picture that we get.
 
-![beers1](https://github.com/user-attachments/assets/cf90f37a-155f-4241-b2c0-7d1d9f3c3dad)
+![beer](https://github.com/user-attachments/assets/6b8d4315-5ec8-4f36-84b3-d07fe51b8c14)
 
 The 2 biggest groups are Czech and German beers which shouldn't be surprising. The two countries produce lots of widely known beers which are sold worldwide. On the other hand, the Italian beers emerged as the number 3 previous years which is unexpected. What is also unexpected is the decline of the American beers as this subcategory also has some famous beers. However, I found that this decline is not as severe as the graph suggests. The main issue here is that Systembolaget started labeling certain beers as "International marks" since the beers started to be brewed in multiple countries (or for other reasons). For this, I investigated the Brooklyn Brewery which is one of the biggest beer sellers to both Sweden and Europe. I noticed that Systembolaget started labeling some of their beers as "International" around year 2018. It turns out that the "International" beers by the Brooklyn Brewery were as much as 46% of the entire American beer sales during previous year. Now, if one tracks all (originally) American beers that are labeled now as "International" and adds their sales to the sales of the American beers, the number of liters of the American beers sold rises from 1,694,503.242 to 3,815,795.649 which is 225% difference. But still, there's a decline of the American beers sold. It will also be interesting to see whether the number will drop even more due to the American foreign policy, their imposed tariffs and reluctance of many Swedes to buy American products. 
