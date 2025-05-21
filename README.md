@@ -78,6 +78,8 @@ Below are Systembolagets revenue (in SEK) for the years 2009-2024.
 
 <img width="456" alt="Снимок экрана 2025-05-21 в 14 52 55" src="https://github.com/user-attachments/assets/ccc71f2b-a0ca-46fd-9288-29d3e5d51548" />
 
+
+
 ![Revenue](https://github.com/user-attachments/assets/a1c48bcb-b035-439e-8a2d-a5c1612e012b)
 
 We see that, with the exception of year 2022, the company's revenue has only grown. Observe the 13.6% procent jump from year 2019 to 2020, which looks anomalous. This is probably due to the COVID-19 pandemic that started in february 2020 in Sweden. It lasted around 2 years and most of the restrictions were lifted around the same month year 2022. While the restrictions in Sweden were milder than in any other country, there were certain restrictions that people followed. The relevant ones are number of people that were allowed to be in stores simultaneously (this concerns Systembolaget), bars closing at 20:00 and maximum number of people sitting at a table, which was 4. This, people's caution and desire to drink alcoholic beverages are what probably resulted in such a jump. There's also a chance that Systembolagets online sales grew as well. However, Systembolaget doesn't provide any such statistics. The situation normalised after year 2022, which can be observed on the graph. 
@@ -101,6 +103,23 @@ It's no suprise that Beer, cider & other drinks and Wine are the mst dominating 
 ### 4.
 
 It is intersting to inspect average price of a bottle of alcohol. For this, I added a restriction - a bottle shouldn't be greater than 1000 ml. This is volume of most bottles/cans/packs that alcohol is sold in and Systembolaget also sells kegs and other products with more volume. 
+
+![Avg_alc](https://github.com/user-attachments/assets/246cd786-131a-4c88-81a9-e53e68d337b9)
+
+Anyway, it should come as no surprise that the Spirits category is the most expensive with the average price for a bottle being around 455 SEK at year 2024. It follows then by the Wine (229 SEK), Alcoholfree (31 SEK) and Beer, cider & other drinks (29 SEK). What is interesting here is the fact that a bottle of beer/cider/other is cheaper than its alcoholfree counterpart. This wasn't the case 10 years ago (22.45 SEK vs 23.3 SEK), but the Alcoholfree category saw a big price increase (from 22.45 SEK to 25.25 SEK) year 2016, which is 11% growth, while the Beer, cider & other drinks only grew 0.8% during the same period. We can also notice that the price curves became more steep the past few years. 
+
+### 5.
+
+Now, let's inspect light lager beer. After all, this is probably the most sold product. How much does a person in Sweden pay on average for a bottle a lager beer? For this, I tracked only the beers that have been sold constantly during these years. There are only 62 such products. Thus, we can also investigate how price on the same beers has changed.
+
+![Avg_lag](https://github.com/user-attachments/assets/270ae411-9d1a-4f99-b8c3-84bdf977555f)
+
+It costed around 16 SEK in 2009 and now the average price is around 22 SEK which is a 27% increase. Once again, we can see that during the last few years, the curve became more steep. The increase was 6.3% during the years 2022 and 2023 and just 2.5% the last year. 
+
+Now, what is await
+
+
+![Avg_lag_pred](https://github.com/user-attachments/assets/fb3cf92d-c8f6-4813-86c6-9eba9950b3b6)
 
 
 
