@@ -102,11 +102,11 @@ It's no suprise that Beer, cider & other drinks and Wine are the most dominating
 
 ### 4.
 
-It is intersting to inspect average price of a bottle of alcohol. For this, I added a restriction - a bottle shouldn't be greater than 1000 ml. This is volume of most bottles/cans/packs that alcohol is sold in and Systembolaget also sells kegs and other products with more volume. 
+It is intersting to inspect average price of a bottle of alcohol. For this, I added a restriction - a bottle shouldn't be greater than 1000 ml. This is volume of most bottles/cans/packs that alcohol is sold in. Otherwise, Systembolaget also sells kegs and other products with more volume. 
 
 ![Avg_alc](https://github.com/user-attachments/assets/246cd786-131a-4c88-81a9-e53e68d337b9)
 
-Anyway, it should come as no surprise that the Spirits category is the most expensive with the average price for a bottle being around 455 SEK at year 2024. It follows then by the Wine (229 SEK), Alcohol free (31 SEK) and Beer, cider & other drinks (29 SEK). What is interesting here is the fact that a bottle of beer/cider/other is cheaper than its alcohol free counterpart. This wasn't the case 10 years ago (22.45 SEK vs 23.3 SEK), but the Alcohol free category saw a big price increase (from 22.45 SEK to 25.25 SEK) year 2016, which is 11% growth, while the Beer, cider & other drinks only grew 0.8% during the same period. We can also notice that the price curves became more steep the past few years. 
+Anyway, it should come as no surprise that the Spirits category is the most expensive with the average price for a bottle being around 455 SEK in 2024. It follows then by the Wine (229 SEK), Alcohol free (31 SEK) and Beer, cider & other drinks (29 SEK). What is interesting here is the fact that a bottle of beer/cider/other is cheaper than its alcohol free counterpart. This wasn't the case 10 years ago (22.45 SEK vs 23.3 SEK), but the Alcohol free category saw a big price increase (from 22.45 SEK to 25.25 SEK) year 2016, which is 11% growth, while the Beer, cider & other drinks only grew 0.8% during the same period. We can also notice that the price curves became more steep the past few years. 
 
 ### 5.
 
