@@ -4,49 +4,24 @@ Project by Alexsey Chernichenko
 
 ## Project Background and Overview
 
-This is an exploratory data analysis of Systembolagets sales during the years 2009 - 2024. Systembolaget is a government-owned chain of liquor stores in Sweden. It is the only retail store allowed to sell alcoholic beverages that contain more than 3.5% alcohol by volume. 
+This project explores Systembolaget's sales data from 2009 to 2024 using Python. The analysis examines long-term sales trends, product categories, prices, product origins and changes in consumer purchasing patterns over time. The project was developed as an exploratory data analysis exercise, with a particular focus on transforming raw tabular data into interpretable statistics and visualisations. The dataset consists of annual Systembolaget sales files containing product-level information such as category, price, volume, country of origin and sales volume. The original data is publicly available from Systembolaget's sales statistics and the datasets used in this analysis are also included in the repository.
 
 The dataset used can be found in https://www.omsystembolaget.se/foretagsfakta/systembolaget-i-siffror/forsaljningsstatistik/ or in the same repository, in the "Systembolaget" folder.
 
-Overall there are 16 files, each with 17 columns and around 15k to 47k rows (depending on table). 
+## Dataset
 
-## Metrics 
+The data contains information including:
 
-- Artnr - Item number, unique to each item
-
-- Varunr - Product number, not unique to each item, but shared between the same products which differ in some way (volume, for instance)
-
-- Kvittonamn - Receipt name
-
-- Namn - Name of the item
-
-- Producentnamn - Alcohol beverage companies
-
-- Varugrupp - Alcohol category
-
-- Varugrupp detalj - Alcohol subcategory
-
-- Rubrik - Yet another subcategory
- 
-- Aktuellt pris - Price 
-
-- Volym i ml - Volume of the bottle in ml
-
-- Buteljtyp - Bottle type
-
-- Land - Country where the beverage was made
-
-- Region - Country's region
-
-- Ursprung - Origin (for most of the items it is the same as Country or Region)
-
-- Ekologisk - Ecological (for products that were made according to necessary ecological rules)
-
-- Etiskt - Ethical (Haven't found any specific information about this label)
-
-- Försäljning i liter - Sales in liters 
-
-- Artikel ID - Item's ID (yet another unique number)
+- Product and article identifiers
+- Product and producer names
+- Product categories and subcategories
+- Price
+- Product volume
+- Bottle/container type
+- Country and region of origin
+- Organic and ethical classifications
+- Sales volume in litres
+- Across the 16 annual files, the datasets contain approximately 15,000–47,000 observations per file, depending on the year and table.
 
 ## Project Goals
 
