@@ -59,12 +59,12 @@ The historical series exhibits a clear trend but no obvious recurring seasonal p
 The resulting forecasts for the following five years are approximately:
 
 | Year | Forecast revenue (SEK) |
-| ---- | ———————————----------- |
-2025	50,342,852,500
-2026	51,690,479,000
-2027	52,976,455,100
-2028	54,333,607,100
-2029	56,024,699,600
+| ---- | ---------------------- |
+| 2025 |	50,342,852,500        |
+| 2026 |  51,690,479,000        |
+| 2027 |	52,976,455,100        |
+| 2028 |	54,333,607,100        |
+| 2029 |	56,024,699,600        |
 
 The forecasts indicate continued revenue growth over the forecast horizon. However, they should be interpreted with considerable caution. With only 16 annual observations available for model fitting, there is limited information from which to estimate long-term dynamics or distinguish persistent trends from temporary changes. In addition, the model cannot anticipate structural changes in consumer behaviour, pricing, regulation, economic conditions or other unexpected events.
 
