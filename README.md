@@ -71,70 +71,116 @@ The forecasts indicate continued revenue growth over the forecast horizon. Howev
 Consequently, the forecasts are best interpreted as an extrapolation of the historical revenue pattern under the assumptions of the fitted model, rather than as a definitive prediction of Systembolaget's future revenue.
 
 
-### 3. 
+### Sales by Main Alcohol Category 
 
-The main alcoholc categories are Wine, Beer, cider & other drinks, Whisky and Alcohol free drinks. Below is a graph that shows how well each of the categories has been selling throughout the years.
+The main alcohol categories in the dataset are Wine, Beer, Cider & Other Drinks, Spirits, Whisky, and Alcohol-Free Drinks. The figure below shows how sales in these categories have developed over the period 2009–2024.
 
 ![spirits](https://github.com/user-attachments/assets/204273f5-a15d-42f4-8d97-598dcd0181e7)
 
-It's no suprise that Beer, cider & other drinks and Wine are the most dominating on the market. Then comes the Spirits (or liquer) category which is followed by the Alcohol free, which looks like the 0-line on this scale (but of course it is not). The Beer, cider & other drinks and Wine products outsell the Whisky products by as much as 7-10 times. One can also see (allegedly) the COVID-19 effect. It is clearly visible on the Beer, cider & other drinks line, a tad less on the wine line and practically invisble on the Whisky line, but this is due to the scale of the picture. Plotting only the Spirits and the Alcohol free drinks shows that the last category actually experienced decrease in sales during the 1st year of the pandemic, which is interesting. 
+As expected, Beer, Cider & Other Drinks and Wine account for the largest volumes of sales throughout the period. The Spirits category follows, while Alcohol-Free Drinks represent a substantially smaller volume and therefore appear close to the zero line on the full-scale plot.
+
+The difference between the largest and smaller categories is substantial: Beer, Cider & Other Drinks and Wine consistently sell several times more litres than Whisky. This difference in scale makes some of the changes in the smaller categories difficult to observe in the combined plot.
+
+The period around 2020 also shows changes in several categories that coincide with the COVID-19 pandemic. The increase is particularly visible for Beer, Cider & Other Drinks and somewhat less pronounced for Wine. The effect is much harder to identify for Whisky because of the scale of the graph.
+
+To examine the smaller categories in more detail, a separate plot was created for Spirits and Alcohol-Free Drinks. 
 
 ![Spirits+AlcFree](https://github.com/user-attachments/assets/44510a1c-18dc-4ee9-8be8-dedfa9ebc9f1)
 
-### 4.
+The plot reveals that Alcohol-Free Drinks actually experienced a decline in sales during the first year of the pandemic. This contrasts with the overall increase observed in some of the larger categories and demonstrates why examining the categories separately can reveal patterns that are difficult to see in an aggregated plot.
 
-It is intersting to inspect average price of a bottle of alcohol. For this, I added a restriction - a bottle shouldn't be greater than 1000 ml. This is volume of most bottles/cans/packs that alcohol is sold in. Otherwise, Systembolaget also sells kegs and other products with more volume. 
+These observations describe changes in sales volumes over time, but they do not by themselves establish the causes behind those changes. In particular, the data cannot distinguish between changes in consumer preferences, product availability, pricing, purchasing behaviour and other external factors.
+
+### Average Product Prices by Category.
+
+The next analysis examines how the average price of products has changed over time. To avoid products such as kegs and other large-volume packages distorting the comparison, products with a volume greater than 1,000 ml were excluded.
 
 ![Avg_alc](https://github.com/user-attachments/assets/246cd786-131a-4c88-81a9-e53e68d337b9)
 
-Anyway, it should come as no surprise that the Spirits category is the most expensive with the average price for a bottle being around 455 SEK in 2024. It follows then by the Wine (229 SEK), Alcohol free (31 SEK) and Beer, cider & other drinks (29 SEK). What is interesting here is the fact that a bottle of beer/cider/other is cheaper than its alcohol free counterpart. This wasn't the case 10 years ago (22.45 SEK vs 23.3 SEK), but the Alcohol free category saw a big price increase (from 22.45 SEK to 25.25 SEK) year 2016, which is 11% growth, while the Beer, cider & other drinks only grew 0.8% during the same period. We can also notice that the price curves became more steep the past few years. 
+In 2024, the Spirits category had by far the highest average product price, at approximately 455 SEK, followed by Wine at approximately 229 SEK. Alcohol-Free Drinks and Beer, Cider & Other Drinks had substantially lower average prices, at approximately 31 SEK and 29 SEK, respectively.
 
-### 5.
+One interesting observation is that the average product price of Beer, Cider & Other Drinks is now slightly lower than that of Alcohol-Free Drinks. This was not the case at the beginning of the period. Around 2009, the corresponding averages were approximately 22.45 SEK for Beer, Cider & Other Drinks and 23.30 SEK for Alcohol-Free Drinks.
 
-Now, let's inspect light lager beer. After all, this is probably the most sold product. How much does a person in Sweden pay on average for a bottle a lager beer? For this, I tracked only the light lager beers that have been sold constantly during the years 2009-2024. There are only 62 such products. Thus, we can also investigate how price on the same beers has changed.
+The difference between the two categories changed considerably over the following years. The average price of Alcohol-Free Drinks increased from approximately 22.45 SEK to 25.25 SEK in 2016, while the corresponding increase for Beer, Cider & Other Drinks was much smaller. This represents an increase of approximately 12% for Alcohol-Free Drinks over that period, compared with less than 1% for Beer, Cider & Other Drinks.
+
+The price series also appear to become steeper in the later years, suggesting that average product prices have increased more rapidly in the most recent part of the dataset.
+
+It is important to note that these figures represent average prices per product, rather than prices adjusted for the volume sold. Changes in the composition of products available in each category can therefore affect the averages. The results should consequently be interpreted as changes in the observed average product price rather than as a direct measure of inflation or changes in the price of an identical basket of products.
+
+### Lighter Lager Prices
+
+The next analysis focuses specifically on light lager beer. To investigate how prices have changed for comparable products, only light lager products that were present continuously throughout the entire period from 2009 to 2024 were included. This resulted in a set of 62 products.
 
 ![Avg_lag](https://github.com/user-attachments/assets/270ae411-9d1a-4f99-b8c3-84bdf977555f)
 
-It costed around 16 SEK in 2009 and now the average price is around 22 SEK which is a 27% increase. Once again, we can see that during the last few years, the curve became more steep. The increase was 6.3% during the years 2022 and 2023 and just 2.5% the last year. 
-
-Now, what will be the average price in the future?
+The average price of these products was approximately 16 SEK in 2009, compared with approximately 22 SEK in 2024, corresponding to an increase of roughly 27% over the period. As with the broader category analysis, the price increase appears to have become more pronounced in recent years. Between 2022 and 2023, the average price increased by approximately 6.3%, followed by an increase of approximately 2.5% in 2024.
 
 
 ![Avg_lag_pred](https://github.com/user-attachments/assets/fb3cf92d-c8f6-4813-86c6-9eba9950b3b6)
 
-The same model (ARIMA) predicts the following average prices for the next 5 years: 22.18 SEK, 22.48 SEK, 23.11 SEK, 23.39 SEK and 23.76 SEK. Percentually, the  growths are roughly between 1.1% and 2.7% which isn't anything outrageous and within the past frames. 
+An ARIMA model was also used to produce an exploratory forecast of the average price for the following five years. The predicted values are:
 
-### 6.
+| Year | Forecast average price |
+| ---- | ---------------------- |
+| 2025 |	22.18 SEK             |
+| 2026 |	22.48 SEK             |
+| 2027 |	23.11 SEK             |
+| 2028 |	23.39 SEK             |
+| 2029 |	23.76 SEK             |
 
-Now, let's investigate the 2nd biggest alcohol group - wines. Below is a graph that shows top 7 countries whose wine customers prefered to buy the most. 
+The corresponding year-on-year increases are approximately 1.1–2.7%, depending on the year. These increases are within the range observed historically, although the recent period has also contained larger individual changes.
+
+As with the revenue forecast, this should be regarded as an exploratory extrapolation rather than a precise prediction. The model is based on a relatively short annual time series, and future prices can be affected by factors that are not captured by the historical series.
+
+### Wine Sales by Country of Origin.
+
+
+Wine is the second-largest alcohol group by sales volume in the dataset. The figure below shows the seven countries whose wines accounted for the largest sales volumes during the period.
 
 ![wine](https://github.com/user-attachments/assets/6f46b9ef-e6b4-4a5e-8ea3-b5f97f9716da)
 
-The market is dominated by the Italian wines which then is followed by the French and Spanish wines, which almost go neck and neck. But what is interesting to see on this graph is the decline of the sales of the South African and Australian wines. During the years 2009-2011, the two were #1 and #3, but ever since they steadily declined whereas the other sales either stayed unchanged or grew. Now, of course this doesn't necessarily imply that Systembolaget should waive these particular wines. After all, they are still the fourth and fifth biggest groups, but perhaps one could start thinking about decreasing the selection of the South African and Australian wines. To make decisions on what to constrain, one could look at how each wine from South Africa and Australia performs. 
+Italy consistently dominates the category, followed by France and Spain, whose sales volumes are relatively close to one another.
+A notable pattern is the decline in sales associated with South African and Australian wines. Both countries were among the largest groups at the beginning of the period. During 2009–2011, South African and Australian wines ranked approximately first and third, respectively, whereas their relative sales volumes subsequently declined while several other countries remained stable or increased.
+The observed decline could potentially be relevant when considering the composition of the product assortment. However, sales data alone are not sufficient to determine whether the decline reflects lower consumer demand, changes in the available product selection, changes in pricing or other factors.
 
-However, this is only one alternative of what this decline might indicate. The other possibility is that Systembolaget itself started purchasing less of the South African and Australian wines and there's just much less to buy for customers. Although, this would mean that Systembolaget now buys ca 2 times less of these wines than 16 years ago. In order to find out if this is true one would need to investigate wine purchase data which is unfortunately unavailable since this isn't something Systembolaget shares.
+For example, one possible explanation would be that Systembolaget offers fewer products from these countries than it did previously. If this were the case, lower sales would not necessarily indicate a corresponding decline in consumer demand. Unfortunately, the available sales data do not contain sufficient information about Systembolaget's historical purchasing decisions to distinguish between these explanations.
 
-Finally, here are top 20 countries in the same category.
+A more detailed analysis could therefore examine individual products from South Africa and Australia and investigate whether their sales declined individually or whether the decline is primarily associated with changes in the number of products available. Such an analysis would provide additional context for the aggregate country-level trends.
+The figure below shows the twenty countries with the highest wine sales volumes over the period.
 
 ![wine1](https://github.com/user-attachments/assets/0f654445-c753-4ce9-bed3-ac8cf4219f20)
 
-### 7. 
+### Sales of Spirit and Liqueur Categories 
 
-What are the most popular liquer groups? Systembolaget categorises things differently prior and after to the year 2016 for some reason. That's why I investigated the data from the year 2016 and beyond.
+The classification of spirit and liqueur products changed between the earlier and later parts of the dataset. To avoid mixing different classification systems, this analysis focuses on the period from 2016 onwards, for which the categories are more consistently defined.
+The results show that Drinks & Cocktails and Whisky account for the largest sales volumes among the categories examined. Both categories also show noticeable changes around the period of the COVID-19 pandemic.
 
 ![spirits](https://github.com/user-attachments/assets/7609e38d-0d28-4139-9edf-ea9aec594a4b)
 
-The categories Drinks & Cocktails (which is mostly comprised of other liquers than whisky such as gin, vodka, rum, etc) and Whisky lead the sales and one can also see noticeable jumps around the years of the pandemic. After 2022, there's a small decrease in sales of these 2 categories. 
+Following 2022, sales in both categories show a modest decline. This pattern is visible in the data, although the analysis does not establish whether it was caused by changes in consumer behaviour, product availability, pricing or other factors.
 
-### 8. 
+The results illustrate the importance of taking changes in the underlying classification system into account when comparing categories over long periods. Restricting this analysis to the more consistently classified period reduces the risk of interpreting changes caused by reclassification as genuine changes in consumer demand.
 
-Finally, let's investigate the beer subcategory. It is strongly dominated by the Swedish beers (what a surprise, huh?) to the extent that one can't really see the other countries except for the "International marks" which represent beers brewed in multiple countries. 
+### Beer Sales by Country of Origin 
+
+The final analysis examines the country of origin of beer products. The category is strongly dominated by Swedish beers, making the differences between many of the other countries difficult to observe on the full-scale graph. Another substantial category is International, which contains beers associated with production in multiple countries or products whose classification has changed over time.
 
 ![beer1](https://github.com/user-attachments/assets/ebf47ba4-3d4c-4e93-9065-c305dc0fe1dd)
 
 
-Excluding these two, this is the picture that we get.
+To make the differences between the remaining countries easier to examine, Swedish and International beers were excluded from the second plot.
 
 ![beer](https://github.com/user-attachments/assets/6b8d4315-5ec8-4f36-84b3-d07fe51b8c14)
 
-The 2 biggest groups are Czech and German beers which shouldn't be surprising. The two countries produce lots of widely known beers which are sold worldwide. On the other hand, the Italian beers emerged as the number 3 previous years which is unexpected. What is also unexpected is the decline of the American beers as this subcategory also has some famous beers. However, I found that this decline is not as severe as the graph suggests. The main issue here is that Systembolaget started labeling certain beers as "International marks" since the beers started to be brewed in multiple countries (or for other reasons). For this, I investigated the Brooklyn Brewery which is one of the biggest beer sellers to both Sweden and Europe. I noticed that Systembolaget started labeling some of their beers as "International" around year 2018. It turns out that the "International" beers by the Brooklyn Brewery were as much as 46% of the entire American beer sales during previous year. Now, if one tracks all (originally) American beers that are labeled now as "International" and adds their sales to the sales of the American beers, the number of liters of the American beers sold rises from 1,694,503.242 to 3,815,795.649 which is 225% difference. But still, there's a decline of the American beers sold. It will also be interesting to see whether the number will drop even more due to the American foreign policy, their imposed tariffs and reluctance of many Swedes to buy American products. 
+Among the remaining countries, Czech and German beers account for some of the largest sales volumes. Italian beers have also become one of the larger groups in more recent years. In contrast, the data show a substantial decline in the recorded sales of American beers.
+However, the decline in the American category appears to be partly affected by changes in classification. To investigate this, the sales history of Brooklyn Brewery products was examined as an example. Some Brooklyn Brewery products were classified as American beers in earlier years but were subsequently classified as International.
+
+The effect can be substantial. In the analysis, products that were originally classified as American but later appeared under the International category accounted for a significant share of the recorded American beer sales. When these products are added back to the American category, the measured sales volume increases from approximately 1.69 million litres to 3.82 million litres, corresponding to roughly 225% of the original recorded volume.
+
+This adjustment suggests that the decline in recorded American beer sales is partly a consequence of classification changes rather than a direct measure of declining demand for American beer. Nevertheless, even after accounting for the identified reclassified products, the adjusted series still shows a decline compared with earlier years.
+
+The classification issue highlights an important limitation of analysing the raw country categories directly. Products can change classification when their production arrangements, labelling or other characteristics change, meaning that a change in the recorded category does not necessarily correspond to a change in consumer preferences.
+
+It would be interesting to examine whether the sales of American-origin beers continue to change in subsequent years. However, attributing future changes to political developments, tariffs or consumer attitudes would require additional data on these factors. The present dataset alone cannot establish such a relationship.
+
+Overall, the beer analysis demonstrates that aggregate category trends need to be interpreted together with the underlying product-level data. In this case, examining individual products helped reveal that at least part of the apparent decline in American beer sales was related to changes in classification rather than sales alone.
