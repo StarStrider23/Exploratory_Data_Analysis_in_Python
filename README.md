@@ -41,33 +41,33 @@ The analysis investigates several questions:
 
 ### Sales & Revenues 
 
-Figure X shows Systembolaget's reported revenue between 2009 and 2024. Overall, revenue follows a clear upward trend throughout the period, with the exception of a decline in 2022. The most pronounced year-on-year increase occurred between 2019 and 2020, when revenue increased by approximately 13.6%.
+The table and the figure below show Systembolaget's reported revenue between 2009 and 2024. Overall, revenue follows a clear upward trend throughout the period, with the exception of a decline in 2022. The most pronounced year-on-year increase occurred between 2019 and 2020 when revenue increased by approximately 13.6%.
 
 <img width="456" alt="Снимок экрана 2025-05-21 в 14 52 55" src="https://github.com/user-attachments/assets/ccc71f2b-a0ca-46fd-9288-29d3e5d51548" />
 
 ![Revenue](https://github.com/user-attachments/assets/a1c48bcb-b035-439e-8a2d-a5c1612e012b)
 
-We see that, with the exception of year 2022, the company's revenue has only grown. Observe the 13.6% procent jump from year 2019 to 2020, which looks anomalous. This is probably due to the COVID-19 pandemic that started in february 2020 in Sweden. It lasted around 2 years and most of the restrictions were lifted around the same month year 2022. While the restrictions in Sweden were milder than in any other country, there were certain restrictions that people had to follow. The relevant ones are number of people that were allowed to be in stores simultaneously (this concerns Systembolaget), bars closing at 20:00 and maximum number of people sitting at a table, which was 4. This, people's caution and desire to enjoy themselves by still being able to drink alcoholic beverages are what probably resulted in such a jump. There's also a chance that Systembolagets online sales grew as well. However, Systembolaget doesn't provide any such statistics. The situation normalised after year 2022, which can be observed on the graph. 
+The increase coincides with the COVID-19 pandemic and the restrictions introduced in Sweden during 2020–2022. These included restrictions on the number of customers permitted in stores, restrictions on opening hours for bars and restaurants, and limitations on the number of people allowed to gather. Changes in consumer behaviour during this period may therefore have contributed to the unusually large increase in Systembolaget's revenue. However, the available data does not allow the effect of these factors to be isolated, and the observed increase should not be interpreted as evidence of a direct causal relationship. Systembolaget's publicly available sales statistics also do not provide sufficient information to determine the contribution of online sales to the change.
+Revenue subsequently declined in 2022 before returning to an upward trajectory. This suggests that at least part of the unusually large increase observed in 2020 was temporary, although the longer-term upward trend remained.
 
-In order to predict the revenue for the next 5 years, I used the Darts module (a user friendly module in Python for forecasting) and the ARIMA model, AutoARIMA to be more specific since Darts' ARIMA model requires at least 30 data points and there are only 16 available at the moment. The ARIMA model is one of the basic models, but it is proven to be a good one. It is suitable since the revenue the data is non stationary (i.e. exhibits a trend, an upward trend to be specific) and has no seasonality. The last reason is why I didn't use SARIMA, for instance. Anyhow, the prediction for the revenue for years 2025-2030 is below. 
+To obtain an indicative forecast of future revenue, an ARIMA model was fitted using the Darts forecasting framework. Auto-ARIMA was used to select the model specification. The annual dataset contains only 16 observations, which places substantial limitations on the reliability of long-term time-series forecasting. The model should therefore be regarded as an exploratory forecasting tool rather than a precise prediction of future revenue.
 
 ![Revenue prediction](https://github.com/user-attachments/assets/5a92a19d-6c27-4812-bf86-c19547c155bd)
 
-It is probably hard to read off the values, but one can extract them by using the mean() function. The future revenues are 50,342,852,500 SEK, 51,690,479,000 SEK, 52,976,455,100 SEK, 54,333,607,100 SEK and 56,024,699,600 SEK. Of course, making predictions aren't easy. There are just too many variabls and things that may go wrong. After all, nobody expected the outbreak of the COVID-19 virus.
-
-The increase coincides with the COVID-19 pandemic and the restrictions introduced in Sweden during 2020–2022. These included restrictions on the number of customers permitted in stores, restrictions on opening hours for bars and restaurants, and limitations on the number of people allowed to gather. Changes in consumer behaviour during this period may therefore have contributed to the unusually large increase in Systembolaget's revenue. However, the available data does not allow the effect of these factors to be isolated, and the observed increase should not be interpreted as evidence of a direct causal relationship. Systembolaget's publicly available sales statistics also do not provide sufficient information to determine the contribution of online sales to the change.
-Revenue subsequently declined in 2022 before returning to an upward trajectory. This suggests that at least part of the unusually large increase observed in 2020 was temporary, although the longer-term upward trend remained.
-Revenue Forecast
-To obtain an indicative forecast of future revenue, an ARIMA model was fitted using the Darts forecasting framework. Auto-ARIMA was used to select the model specification. The annual dataset contains only 16 observations, which places substantial limitations on the reliability of long-term time-series forecasting. The model should therefore be regarded as an exploratory forecasting tool rather than a precise prediction of future revenue.
 The historical series exhibits a clear trend but no obvious recurring seasonal pattern at the annual frequency. For this reason, a non-seasonal ARIMA model was used rather than a seasonal ARIMA specification.
+
 The resulting forecasts for the following five years are approximately:
-Year	Forecast revenue (SEK)
+
+| Year | Forecast revenue (SEK) |
+| ---- | ———————————----------- |
 2025	50,342,852,500
 2026	51,690,479,000
 2027	52,976,455,100
 2028	54,333,607,100
 2029	56,024,699,600
+
 The forecasts indicate continued revenue growth over the forecast horizon. However, they should be interpreted with considerable caution. With only 16 annual observations available for model fitting, there is limited information from which to estimate long-term dynamics or distinguish persistent trends from temporary changes. In addition, the model cannot anticipate structural changes in consumer behaviour, pricing, regulation, economic conditions or other unexpected events.
+
 Consequently, the forecasts are best interpreted as an extrapolation of the historical revenue pattern under the assumptions of the fitted model, rather than as a definitive prediction of Systembolaget's future revenue.
 
 
