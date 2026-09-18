@@ -45,7 +45,8 @@ The table and the figure below show Systembolaget's reported revenue between 200
 
 <img width="456" alt="Снимок экрана 2025-05-21 в 14 52 55" src="https://github.com/user-attachments/assets/ccc71f2b-a0ca-46fd-9288-29d3e5d51548" />
 
-![Revenue](https://github.com/user-attachments/assets/a1c48bcb-b035-439e-8a2d-a5c1612e012b)
+<img width="1200" height="400" alt="446110114-a1c48bcb-b035-439e-8a2d-a5c1612e012b" src="https://github.com/user-attachments/assets/23df05a7-d3c9-46e4-8d01-b4af8863aa77" />
+
 
 The increase coincides with the COVID-19 pandemic and the restrictions introduced in Sweden during 2020–2022. These included restrictions on the number of customers permitted in stores, restrictions on opening hours for bars and restaurants, and limitations on the number of people allowed to gather. Changes in consumer behaviour during this period may therefore have contributed to the unusually large increase in Systembolaget's revenue. However, the available data does not allow the effect of these factors to be isolated, and the observed increase should not be interpreted as evidence of a direct causal relationship. Systembolaget's publicly available sales statistics also do not provide sufficient information to determine the contribution of online sales to the change.
 Revenue subsequently declined in 2022 before returning to an upward trajectory. This suggests that at least part of the unusually large increase observed in 2020 was temporary, although the longer-term upward trend remained.
