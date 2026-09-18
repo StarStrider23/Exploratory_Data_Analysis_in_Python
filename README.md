@@ -1,4 +1,4 @@
-# Exploratory Data Analysis in Python
+# Exploratory Data Analysis of Systmebolaget
 
 Project by Alexsey Chernichenko
 
