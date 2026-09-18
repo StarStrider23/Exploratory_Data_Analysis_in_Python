@@ -25,35 +25,25 @@ The data contains information including:
 
 ## Project Goals
 
-The goal of the project is to analyse Systembolagets sales by studying and answering the following questions:
+The analysis investigates several questions:
 
-1. What was the revenue of Systembolaget during the years 2009-2024? How did it change percentually?
-
-2. What will be the company's revenue in the next 5 years?
-
-3. What are the main categories of the alcohol and how well does they sell?
-
-4. What is the average price of a bottle of alcohol and how has it changed throughout the years?
-
-5. What is the average price of a bottle of lager beer and how has it changed throughout the years? What will be the prices in 2025-2030?
-
-6. What are the origins of wines that are sold the most?
-
-7. What are the most bought categories of the liquer?
-
-8. What are the origins of the beers that are sold the most?
+- How did Systembolaget's sales develop between 2009 and 2024?
+- How did sales change during different periods?
+- Which product categories account for the largest sales volumes?
+- How have average product prices changed over time?
+- How has the price of light lager changed since 2009?
+- Which countries are the main origins of wine and beer sold in Sweden?
+- Which spirit categories have the highest sales volumes?
+- Can historical trends provide reasonable short-term forecasts of sales and prices?
 
 
-## Results
+## Results & Discussion
 
-### 1+2. 
+### Sales & Revenues 
 
-Below are Systembolagets revenue (in SEK) for the years 2009-2024. 
-
+Figure X shows Systembolaget's reported revenue between 2009 and 2024. Overall, revenue follows a clear upward trend throughout the period, with the exception of a decline in 2022. The most pronounced year-on-year increase occurred between 2019 and 2020, when revenue increased by approximately 13.6%.
 
 <img width="456" alt="Снимок экрана 2025-05-21 в 14 52 55" src="https://github.com/user-attachments/assets/ccc71f2b-a0ca-46fd-9288-29d3e5d51548" />
-
-
 
 ![Revenue](https://github.com/user-attachments/assets/a1c48bcb-b035-439e-8a2d-a5c1612e012b)
 
@@ -64,6 +54,22 @@ In order to predict the revenue for the next 5 years, I used the Darts module (a
 ![Revenue prediction](https://github.com/user-attachments/assets/5a92a19d-6c27-4812-bf86-c19547c155bd)
 
 It is probably hard to read off the values, but one can extract them by using the mean() function. The future revenues are 50,342,852,500 SEK, 51,690,479,000 SEK, 52,976,455,100 SEK, 54,333,607,100 SEK and 56,024,699,600 SEK. Of course, making predictions aren't easy. There are just too many variabls and things that may go wrong. After all, nobody expected the outbreak of the COVID-19 virus.
+
+The increase coincides with the COVID-19 pandemic and the restrictions introduced in Sweden during 2020–2022. These included restrictions on the number of customers permitted in stores, restrictions on opening hours for bars and restaurants, and limitations on the number of people allowed to gather. Changes in consumer behaviour during this period may therefore have contributed to the unusually large increase in Systembolaget's revenue. However, the available data does not allow the effect of these factors to be isolated, and the observed increase should not be interpreted as evidence of a direct causal relationship. Systembolaget's publicly available sales statistics also do not provide sufficient information to determine the contribution of online sales to the change.
+Revenue subsequently declined in 2022 before returning to an upward trajectory. This suggests that at least part of the unusually large increase observed in 2020 was temporary, although the longer-term upward trend remained.
+Revenue Forecast
+To obtain an indicative forecast of future revenue, an ARIMA model was fitted using the Darts forecasting framework. Auto-ARIMA was used to select the model specification. The annual dataset contains only 16 observations, which places substantial limitations on the reliability of long-term time-series forecasting. The model should therefore be regarded as an exploratory forecasting tool rather than a precise prediction of future revenue.
+The historical series exhibits a clear trend but no obvious recurring seasonal pattern at the annual frequency. For this reason, a non-seasonal ARIMA model was used rather than a seasonal ARIMA specification.
+The resulting forecasts for the following five years are approximately:
+Year	Forecast revenue (SEK)
+2025	50,342,852,500
+2026	51,690,479,000
+2027	52,976,455,100
+2028	54,333,607,100
+2029	56,024,699,600
+The forecasts indicate continued revenue growth over the forecast horizon. However, they should be interpreted with considerable caution. With only 16 annual observations available for model fitting, there is limited information from which to estimate long-term dynamics or distinguish persistent trends from temporary changes. In addition, the model cannot anticipate structural changes in consumer behaviour, pricing, regulation, economic conditions or other unexpected events.
+Consequently, the forecasts are best interpreted as an extrapolation of the historical revenue pattern under the assumptions of the fitted model, rather than as a definitive prediction of Systembolaget's future revenue.
+
 
 ### 3. 
 
